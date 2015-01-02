@@ -1,0 +1,906 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jesus Castillo eslava</title>
+
+<style>
+/* *.*.*.*.*.* PRINCIPAL *.*.*.*.*.* */
+
+
+	/* Cuerpo */
+		body{
+			padding:0;
+			margin:0;
+			background-color:#00773C;
+		}
+	
+	
+	/* Cabecera */
+		#cabecera{
+			background-color:#D6D6D6;
+			text-align:center;
+			padding:25px;
+			margin:100px;
+			position:relative;
+			margin-top:110px;
+			height:100px;
+		}
+		
+		/* Avatar */
+		#cabecera img{
+			border: 2px solid grey;
+			margin: 0;
+			padding: 0;
+			border-radius: 800px;
+			overflow: hidden;
+			z-index:5;
+			position:relative;
+			top:-100px;
+			height:150px;
+			width:150px;
+		}
+		
+		/* Animacion avatar */
+		#cabecera img:hover{
+			-webkit-animation-name: animacion_cabecera_avatar;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-delay: 0s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: normal;
+			-webkit-animation-play-state: running;
+			
+			animation-name: animacion_cabecera_avatar;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: normal;
+			animation-play-state: running;
+		}
+		
+		@-webkit-keyframes animacion_cabecera_avatar {
+			0%   {}
+			25%  {border: 2px solid #F00;}
+			50%  {border: 2px solid #0F0;transform:scale(1.1)}
+			75%  {border: 2px solid #00F;}
+			100% {border: 2px solid #FF0;}
+		}
+		
+		@keyframes animacion_cabecera_avatar {
+			0%   {}
+			25%  {border: 2px solid #F00;}
+			50%  {border: 2px solid #0F0;transform:scale(1.1)}
+			75%  {border: 2px solid #00F;}
+			100% {border: 2px solid #FF0;}
+		}
+		
+		/* Frase presentacion */
+		#frase{
+			position:relative;
+			z-index: 2;
+			top:-100px;
+		}
+	
+		/* Animacion frase */
+		#frase:hover {
+			position:relative;
+			overflow: hidden;
+			-webkit-animation-name: animacion_cabecera_frase;
+			-webkit-animation-duration: 3s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-delay: 0s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-direction: normal;
+			-webkit-animation-play-state: running;
+			
+			animation-name: animacion_cabecera_frase;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+			animation-delay: 0s;
+			animation-iteration-count: 1;
+			animation-direction: normal;
+			animation-play-state: running;
+		}
+		
+		@-webkit-keyframes animacion_cabecera_frase {
+			0%   {color:black; top:-100; z-index:2;}
+			25%  {color:red; top:-150px; z-index:2;}
+			50%  {color:blue; top:-300px; z-index:2;}
+			51%  {color:blue; top:-300px; z-index:10;}
+			75%  {color:yellow; top:-150px; z-index:10;}
+			100% {color:black; top:-100;  z-index:10;}
+		}
+		
+		@keyframes animacion_cabecera_frase {
+			0%   {color:black; top:-100; z-index:2;}
+			25%  {color:red; top:-150px; z-index:2;}
+			50%  {color:blue; top:-300px; z-index:2;}
+			51%  {color:blue; top:-300px; z-index:10;}
+			75%  {color:yellow; top:-150px; z-index:10;}
+			100% {color:black; top:-100;  z-index:10;}
+		}
+	
+	
+	/* Menu */
+		#navegador{
+			position:relative;
+			top:-101px;
+		}
+		
+		a, a:visited {
+			text-decoration:none;
+			outline:none;
+			color:#FF0;
+		}
+		
+		a:hover{
+			text-decoration:underline;
+		}
+		
+		 nav{
+			display: block;
+		}
+		
+		/*----------------------------
+			The Navigation Menu
+		-----------------------------*/
+		#navega > ul{
+			margin:0 100px;
+			background-color:#030303;
+			text-align:center;
+			color:#FF0;
+			
+		}
+		
+		#navega > ul > li{ 
+			list-style: none;
+			display: inline-block;
+			margin: 1px;
+			position:relative;
+			width:100px;
+			padding:5px 0;
+			margin-left:50px;
+		}
+		
+		#navega > ul > li > a{
+			color:inherit;
+			text-decoration:none !important;
+			font-size:24px;
+		}
+		
+		#navega li ul{
+			position:absolute;
+			list-style:none;
+			text-align:center;
+			width:180px;
+			margin-left:-80px;
+			font:bold 12px 'Open Sans Condensed', sans-serif;
+			max-height:0px;
+			overflow:hidden;
+			-webkit-transition:max-height 0.4s linear;
+			-moz-transition:max-height 0.4s linear;
+			transition:max-height 0.4s linear;
+			z-index:99999;
+		}
+		
+		#navega li ul li{
+			background-color:#313131;
+		}
+		
+		#navega li ul li a{
+			padding:12px;
+			color:#FF0 !important;
+			text-decoration:none !important;
+			display:block;
+		}
+		
+		#navega li ul li:nth-child(odd){
+			background-color:#363636;
+		}
+		
+		#navega li ul li:hover{
+			background-color:#00773C;
+			color:#F00;
+		}
+		
+		#navega li ul li:first-child{
+			border-radius:3px 3px 0 0;
+			margin-top:25px;
+			position:relative;
+		}
+		
+		#navega li ul li:first-child:before{
+			content:'';
+			position:absolute;
+			width:1px;
+			height:1px;
+			border:5px solid transparent;
+			border-bottom-color:#313131;
+			left:50%;
+			top:-10px;
+			margin-left:-5px;
+		}
+		
+		#navega li ul li:last-child{
+			border-bottom-left-radius:3px;
+			border-bottom-right-radius:3px;
+		}
+		
+		#navega li:hover ul{
+			max-height:500px;
+		}
+		
+		/* Animacion hover enlace principales */
+		a.principales:hover { 
+			transition-delay:0s;
+			transition-duration:0.51s;
+			transition-property:all;
+			transition-timing-function:linear;
+			border-radius: 10px;
+			background-color:#FF0;
+			color:#000 !important;
+			box-shadow: 0 0 55px white;
+			padding:5px;
+		}
+
+	/* Central */
+		#central{
+			position:relative;
+			top:-201px;
+			background-color:#FFF;
+			margin:100px;
+			padding:25px;
+			overflow:hidden;
+			z-index:1;
+			
+		}
+		
+		/* Datos personales */
+		#datos{
+			float:left;
+			width:35%;
+			overflow:hidden;
+			border-right: 2px solid #00773C;
+			padding-right:15px;
+		}
+		
+		#datos h1{
+			text-align:center;
+		}
+		
+		/* Raya 1 */
+		#datos h1:after{
+			content: ""; 
+			height: 1px; 
+			position: absolute; 
+			width: 60px;   
+			background-image: -webkit-gradient(linear, left top, right top, from(#000), to(#FFF)); 
+			background-image: -webkit-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -moz-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -ms-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -o-linear-gradient(left, from(#000), to(#FFF));
+			background-image: linear-gradient(left, from(#000), to(#FFF));
+			top:65px;
+			left:350px;
+		}
+		
+		/* Raya 2 */
+		#datos h1:before{
+			content: ""; 
+			height: 1px; 
+			position: absolute; 
+			width: 60px;   
+			background-image: -webkit-gradient(linear, left top, right top, from(#FFF), to(#000)); 
+			background-image: -webkit-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -moz-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -ms-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -o-linear-gradient(left, from(#FFF), to(#000));
+			background-image: linear-gradient(left, from(#FFF), to(#000)); 
+			top:65px;
+			left:25px;
+		}
+		
+		/* Quitar los bordes del exterior */
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			-moz-box-shadow: 0px 0px 20px #00773C ;
+			-webkit-box-shadow: 0px 0px 20px #00773C ;
+			box-shadow: 0px 0px 20px #00773C ;
+			-moz-border-radius-topleft: 8px;
+			-moz-border-radius-topright:8px;
+			-moz-border-radius-bottomleft:8px;
+			-moz-border-radius-bottomright:8px;
+		
+			-webkit-border-top-left-radius:8px;
+			-webkit-border-top-right-radius:8px;
+			-webkit-border-bottom-left-radius:8px;
+			-webkit-border-bottom-right-radius:8px;
+		
+			border-top-left-radius:8px;
+			border-top-right-radius:8px;
+			border-bottom-left-radius:8px;
+			border-bottom-right-radius:8px;
+		}
+		
+		table th, table td {
+			border: 2px solid #00773C;
+		}
+		
+		table tr:first-child td { 
+			border-top:none;
+		}
+		
+		table tr:last-child td { 
+			border-bottom: none;
+		}
+		
+		table th:first-child, table td:first-child { 
+			border-left: none;
+		}
+		
+		table th:last-child, table td:last-child { 
+			border-right: none;
+		}
+		
+		/* Google maps */
+		#maps{
+			margin-top: 25px;
+			text-align:center;
+			position:relative;
+			border-top: 2px solid #00773C;
+			width:100%;
+			
+		}
+		
+		iframe{
+			overflow:hidden;
+			width:98%;
+			height:200px;
+			border: 2px solid black;
+			-moz-box-shadow: 2px 2px 5px #000000 ;
+			-webkit-box-shadow: 2px 2px 5px #000000 ;
+			box-shadow: 2px 2px 5px #000000 ;
+		}
+		
+		/* Informacion */
+		#informacion{
+			margin-top: 25px;
+			position:relative;
+			border-top: 2px solid #00773C;
+			width:100%;
+		}
+		
+		#informacion h2{
+			text-align:center;
+		}
+		
+		#informacion p{
+			text-align:justify;
+		}
+		
+		#informacion ul{
+			list-style:none;
+		}
+		
+		#informacion ul li{
+			
+		}
+		
+		#informacion ul li a{
+			margin-top:55px;
+			margin-left:55px;
+		}
+		
+		#informacion a, #informacion a:visited, #informacion a:hover, #informacion a:active{
+			color:#00773C;
+			text-decoration:none;
+			font-weight:bold;
+			cursor: text;
+			border:0px solid black;
+		}
+		
+		#informacion .ima1:hover  + .enl1{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima2:hover  + .enl2{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima3:hover  + .enl3{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima4:hover  + .enl4{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima5:hover  + .enl5{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima6:hover  + .enl6{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima7:hover  + .enl7{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima8:hover  + .enl8{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		#informacion .ima9:hover  + .enl9{
+			-webkit-animation-name: animacion_informacion;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_informacion;
+			animation-duration: 0.3s;
+			animation-fill-mode: both;
+		}
+		
+		@-webkit-keyframes animacion_informacion {
+			0%   {}
+			25%  {}
+			50%  {}
+			51%  {}
+			75%  {}
+			100% {
+				margin-left:10px; 
+				color:white; 
+				background-color:#00773C; 
+				padding: 5px 20px;
+				border:2px solid black;
+				
+				-moz-border-radius-topleft: 0px;
+				-moz-border-radius-topright:8px;
+				-moz-border-radius-bottomleft:8px;
+				-moz-border-radius-bottomright:8px;
+			
+				-webkit-border-top-left-radius:0px;
+				-webkit-border-top-right-radius:8px;
+				-webkit-border-bottom-left-radius:8px;
+				-webkit-border-bottom-right-radius:8px;
+			
+				border-top-left-radius:0px;
+				border-top-right-radius:8px;
+				border-bottom-left-radius:8px;
+				border-bottom-right-radius:8px;
+				
+				-moz-box-shadow: 2px 2px 5px #000000 ;
+				-webkit-box-shadow: 2px 2px 5px #000000 ;
+				box-shadow: 2px 2px 5px #000000 ;
+			}
+		}
+		
+		@keyframes animacion_informacion {
+			0%   {color:black;}
+			25%  {}
+			50%  {}
+			51%  {}
+			75%  {}
+			100% {margin-left:150px;color:red; background-color:#0F0; }
+		}
+		
+		#informacion img:hover{
+			overflow: hidden;
+			
+			-webkit-animation-name: animacion_icono;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: both;
+			
+			animation-name: animacion_icono;
+			animation-duration: 0.5s;
+			animation-timing-function: linear;
+			animation-fill-mode: both;
+		}
+		
+		@-webkit-keyframes animacion_icono {
+			0%   {}
+			100% {transform: scale(1.8)}
+		}
+		
+		@keyframes animacion_icono {
+			0%   {}
+			100% {transform: scale(1.8)}
+		}
+		
+		
+		
+		/* Barra vertical degradada */
+		#barra_degradada{
+			float:left;
+			height:700px;
+			width:1%;
+			margin-left:18px;
+			overflow:hidden;
+			background-image: -moz-linear-gradient(top, #0080FF #B7DBFF);
+			background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #0080FF), color-stop(1.0, #B7DBFF));
+			background-color: #0080FF;
+		}
+		
+		/* Curriculum */
+		#trayectoria{
+			float:left;
+			width:60%;
+			overflow:hidden;
+			margin-left:5px;
+			text-align:center;
+			padding:5px
+		}
+		
+		/* Raya 1 */
+		#trayectoria h1:after{
+			content: "";
+			height: 1px;
+			position: absolute;
+			width: 120px;
+			background-image: -webkit-gradient(linear, left top, right top, from(#FFF), to(#000));
+			background-image: -webkit-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -moz-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -ms-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -o-linear-gradient(left, from(#FFF), to(#000));
+			background-image: linear-gradient(left, from(#FFF), to(#000));
+			top:71px;
+			left:555px;
+		}
+		
+		/* Raya 2 */
+		#trayectoria h1:before{
+			content: "";
+			height: 1px;
+			position: absolute;
+			width: 120px;
+			background-image: -webkit-gradient(linear, left top, right top, from(#000), to(#FFF));
+			background-image: -webkit-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -moz-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -ms-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -o-linear-gradient(left, from(#000), to(#FFF));
+			background-image: linear-gradient(left, from(#000), to(#FFF)); 
+			top:71px;
+			right:165px;
+		}
+		
+		/* Lista del curriculum */
+		#contenido{
+			text-align:left;
+		}
+		
+		#contenido ul span{
+	
+			background-color:#000;
+			color:#FFF;
+			margin-left:-50px;
+			padding:5px;
+			font-size:18px;
+		}
+		
+		#contenido ul li{
+			margin-top:25px;
+			list-style: none;
+			margin-left:15px;
+			
+		}
+		
+		#contenido li ul li{
+			padding:5px;
+			background-image: -moz-linear-gradient(left, #D6D6D6, #FFF);
+			background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #D6D6D6), color-stop(1.0, #FFF));
+			background-color:#D6D6D6;
+			
+			-moz-border-radius-topleft: 8px;
+			-moz-border-radius-topright:8px;
+			-moz-border-radius-bottomleft:8px;
+			-moz-border-radius-bottomright:8px;
+		
+			-webkit-border-top-left-radius:8px;
+			-webkit-border-top-right-radius:8px;
+			-webkit-border-bottom-left-radius:8px;
+			-webkit-border-bottom-right-radius:8px;
+		
+			border-top-left-radius:8px;
+			border-top-right-radius:8px;
+			border-bottom-left-radius:8px;
+			border-bottom-right-radius:8px;
+		}
+		
+	
+	/* Pie */
+		#pie{
+			background-color:#000;
+			color:#FF0;
+			padding:5px;
+			text-align:center;
+			font-size:36px;
+		}
+		
+		#contenedor{
+			height:70px;
+		}
+		
+		
+/* *.*.*.*.*.* FORMULARIO *.*.*.*.*.* */
+
+/* Curriculum */
+		#formulario{
+			float:left;
+			width:60%;
+			overflow:hidden;
+			margin-left:5px;
+			padding:5px
+		}
+		
+		#formulario h1{
+			text-align:center;
+		}
+		
+		/* Raya 1 */
+		#formulario h1:after{
+			content: "";
+			height: 1px;
+			position: absolute;
+			width: 120px;
+			background-image: -webkit-gradient(linear, left top, right top, from(#FFF), to(#000));
+			background-image: -webkit-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -moz-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -ms-linear-gradient(left, from(#FFF), to(#000));
+			background-image: -o-linear-gradient(left, from(#FFF), to(#000));
+			background-image: linear-gradient(left, from(#FFF), to(#000));
+			top:71px;
+			left:555px;
+		}
+		
+		/* Raya 2 */
+		#formulario h1:before{
+			content: "";
+			height: 1px;
+			position: absolute;
+			width: 120px;
+			background-image: -webkit-gradient(linear, left top, right top, from(#000), to(#FFF));
+			background-image: -webkit-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -moz-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -ms-linear-gradient(left, from(#000), to(#FFF));
+			background-image: -o-linear-gradient(left, from(#000), to(#FFF));
+			background-image: linear-gradient(left, from(#000), to(#FFF)); 
+			top:71px;
+			right:165px;
+		}
+		
+		#formulario ul{
+			margin-top:10px;	
+		}
+		
+		#formulario ul li{
+			padding:5px;
+			margin-top:10px;
+		}
+		
+		#formulario a, #formulario a:visited, #formulario a:active{
+			color:#000000;
+			text-align:left !important;
+			text-decoration:none;
+		}
+		
+		#formulario a:hover{
+			color: #00773C;
+		}
+		
+	
+</style>
+
+
+</head>
+
+<body">
+	<div id="contenedor">
+    
+    	<div id="cabecera">
+        
+        	<div id="avatar">
+            	<img  src="Imagenes/avatar.png" />
+            </div> <!-- FIN AVATAR -->
+            
+            <div id="frase">
+            	<h1>Soy Jesús Castillo Eslava</h1>
+            </div> <!-- FIN FRASE -->
+            
+        </div><!-- FIN CABECERA -->
+		
+        <div id="navegador">
+        	<nav id="navega">
+                <ul>
+                    <li class="animaciones">
+                        <a class="principales" href="http://jesuscastillo.esy.es/Curriculum/Index.html" class="icon-home">Inicio</a>
+                    </li>
+                    
+                    <li class="animaciones">
+                        <a class="principales" href="#" class="icon-home">Animaciones</a>
+                    </li>
+                    
+                    <li class="formularios">
+                        <a class="principales" href="http://jesuscastillo.esy.es/Curriculum/Formulario.html" class="icon-cogs">Formularios</a>
+                        <ul>
+                            <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormularioConNuevosElementos.html">Formulario con nuevos elementos</a></li>
+                            <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormuluarioConParteOculta.html">Formulario con parte oculta</a></li>
+                            <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormularioVenta.html">Formulario de venta online 1(simple)</a></li>
+                            <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormularioVentaAcordeon.html">Formulario de venta online 2(acordeon)</a></li>
+                   			<li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/Login.html">Formulario Login</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="javaScript">
+                        <a class="principales" href="#" class="icon-twitter">JavaScript</a>
+                    </li>
+                    
+                    <li class="plantilla">
+                        <a class="principales" href="#" class="icon-home">Plantilla</a>
+                    </li>
+                    
+                    <li class="transiciones">
+                        <a class="principales" href="#" class="icon-beaker">Transiciones</a>
+                    </li>
+                    
+                    <li class="otros">
+                        <a class="principales" href="#" class="icon-envelope">Otros</a>
+                        <ul>
+                            <li><a href="#">Bordes</a></li>
+                            <li><a href="#">Count</a></li>
+                            <li><a href="#">Fotos</a></li>
+                            <li><a href="#">Fuentes</a></li>
+                            <li><a href="#">Gradientes</a></li>
+                            <li><a href="#">Modal</a></li>
+                            <li><a href="#">Numero de hijo</a></li>
+                            <li><a href="#">Rotaciones</a></li>
+                            <li><a href="#">Sombra</a></li>
+                            <li><a href="#">Transformaciones</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav> <!-- FIN NAV-->
+        </div> <!-- FIN NAVEGADOR -->
+        
+        <div id="central">
+        
+        	<div id="datos">
+                <h1 class="dat">Datos Personales</h1>
+                
+                <center>
+                    <table class="hola">
+                      <tr>
+                        <td>Nombre</td>
+                        <td>Jesús Manuel</td>
+                      </tr>
+                      <tr>
+                        <td>Apellidos</td>
+                        <td>Castillo Eslava</td>
+                      </tr>
+                      <tr>
+                        <td>Provincia</td>
+                        <td>Cádiz</td>
+                      </tr>
+                      <tr>
+                        <td>Localidad</td>
+                        <td>Cádiz</td>
+                      </tr>
+                      <tr>
+                        <td>Correo</td>
+                        <td>jesus.castillo.eslava@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Sexo</td>
+                        <td>Masculina</td>
+                      </tr>
+                      <tr>
+                        <td>Fecha de nacimiento</td>
+                        <td>21/12/1988</td>
+                      </tr>
+                      <tr>
+                        <td>Nacionalidad</td>
+                        <td>Española</td>
+                      </tr>
+                    </table>
+                </center> 
+    			
+                <div id="maps">
+            	<h2>Trebujena<br />Lugar de estudio</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6383.777843005312!2d-6.175581229874805!3d36.86907752842963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0de939891347eb%3A0x90986a693b14a953!2sAv.+de+Chipiona%2C+40%2C+11560+Trebujena%2C+C%C3%A1diz!5e0!3m2!1ses!2ses!4v1419784729920" frameborder="0">
+                </iframe>
+                </div>
+                
+                <div id="informacion">
+            	<h2>Conocimiento</h2>
+                <p>Durante estos dos años en el grado superiror he aprendido diferentes materias y tecnologias</p>
+                <ul>
+                	<li><img class="ima1" src="Imagenes/Database.png" width="25px" height="25px"/><a class="enl1" href="#">Bases de datos</a></li>
+                	<li><img class="ima2" src="Imagenes/java.png" width="25px" height="25px"/><a class="enl2" href="#">Java</a></li>
+                    <li><img class="ima3" src="Imagenes/android.gif" width="25px" height="25px"/><a class="enl3" href="#">Android</a></li>
+                    <li><img class="ima4" src="Imagenes/html.png" width="25px" height="25px"/><a class="enl4" href="#">HTML</a></li>
+                    <li><img class="ima5" src="Imagenes/css.png" width="25px" height="25px"/><a class="enl5" href="#">CSS</a></li>
+                    <li><img class="ima6" src="Imagenes/PHP.png" width="25px" height="25px"/><a class="enl6" href="#">PHP</a></li>
+                    <li><img class="ima7" src="Imagenes/javascript.jpg" width="25px" height="25px"/><a class="enl7" href="#">JavaScript</a></li>
+                    <li><img class="ima8" src="Imagenes/ajax.png" width="25px" height="25px"/><a class="enl8" href="#">AJAX</a></li>
+                    <li><img class="ima9" src="Imagenes/jsp.png" width="25px" height="25px"/><a class="enl9" href="#">JSP</a></li>
+                </ul>
+            </div> <!-- INFORMACION -->
+
+            </div> <!-- FIN DATOS -->
+            
+            <div id="formulario">
+            	<h1>Formulario</h1>
+                <ul>
+                    <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormularioConNuevosElementos.html">Formulario con nuevos elementos</a></li>
+                    <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormuluarioConParteOculta.html">Formulario con parte oculta</a></li>
+                    <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormularioVenta.html">Formulario de venta online 1(simple)</a></li>
+                    <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/FormularioVentaAcordeon.html">Formulario de venta online 2(acordeon)</a></li>
+                    <li><a href="http://jesuscastillo.esy.es/Curriculum/Formularios/Login.html">Formulario Login</a></li>
+                    
+                </ul>
+        	</div> <!-- FIN TRAYECTORIA -->
+            
+            
+            
+        </div> <!-- FIN CENTRAL -->
+        
+        <div id="pie">
+            <h1>Muchas Gracias Por Visitar La Web</h1>
+        </div> <!-- FIN PIE -->
+        
+	</div> <!-- FIN CONTENEDIR-->
+    
+</body>
+</html>
